@@ -1,6 +1,6 @@
 {
   "name": "simple-pokedex",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/evanliomain/pokedex/issues"
   },
-  "homepage": "https://github.com/evanliomain/pokedex#readme"
+  "homepage": "https://github.com/evanliomain/pokedex#readme",
+  "dependencies": {
+    "left-pad": "^1.1.1"
+  }
 }
