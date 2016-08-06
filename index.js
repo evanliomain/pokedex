@@ -14,10 +14,16 @@ module.exports = function(id) {
 
 
 function _getPokemonById(id) {
+  var image;
+
   const nId = parseInt(id, 10) - 1,
         sId = leftPad(id, 3, 0);
 
-  return Object.assign({}, pokemons.pokemons[nId], {
-    image : new Buffer(fs.readFileSync('./img/' + sId + '.png')).toString('base64')
-  });
+  try {
+    image = new Buffer(fs.readFileSync('./img/' + sId + '.png')).toString('base64');
+  } catch (error) {
+    image = null;
+  }
+
+  return Object.assign({}, pokemons.pokemons[nId], { image });
 }
