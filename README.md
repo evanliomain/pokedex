@@ -1,4 +1,8 @@
 # pokedex
+> A very simple pokedex package to get basic information on pokemon without http request.
+
+This pokedex give you names and image of the first 720 pokemons without http request.
+
 
 ## Installation
 
