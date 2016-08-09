@@ -1,6 +1,7 @@
 # pokedex
 
 ## Installation
+
 `npm install simple-pokedex --save`
 
 ## How to use
